@@ -59,11 +59,14 @@ jobs:
           MARIADB_USER: uvlhub_user
           MARIADB_PASSWORD: uvlhub_password
 
+        # 1.- Añadir un paso que verifique si hay nuevas versiones de las dependencias instaladas
       - name: Upload coverage to Codacy
         if: matrix.python-version == '3.13'
         run: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage.xml
         env:
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
-
+          
+        # 2.- Verificar la compatibilidad del código con las versiones 3.13 y 3.14 de Python
       - name: Verify newest versions of installed dependencies
         run: python -m pip list --outdated
+
