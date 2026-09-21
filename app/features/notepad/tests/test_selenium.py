@@ -1,9 +1,9 @@
-from selenium.common.exceptions import NoSuchElementException
 import time
-from tests.selenium_support import close_driver, get_host_for_selenium_testing, initialize_driver
-
 
 import pytest
+from selenium.common.exceptions import NoSuchElementException
+
+from tests.selenium_support import close_driver, get_host_for_selenium_testing, initialize_driver
 
 pytestmark = pytest.mark.e2e
 

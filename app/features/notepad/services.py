@@ -1,5 +1,6 @@
-from app.features.notepad.repositories import NotepadRepository
 from splent_framework.services.BaseService import BaseService
+
+from app.features.notepad.repositories import NotepadRepository
 
 
 class NotepadService(BaseService):
