@@ -53,3 +53,7 @@ ubuntu-bionic-18.04-cloudimg-console.log
 # ==========================
 # Custom ignores
 # ==========================
+
+.atl/.skill-registry.cache.json
+
+.atl/skill-registry.md
