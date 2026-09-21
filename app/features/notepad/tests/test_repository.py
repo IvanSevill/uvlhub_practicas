@@ -4,6 +4,7 @@ These exercise the repository in isolation against a real database — no
 service orchestration, no HTTP. Use the ``test_app`` fixture from
 splent_framework for the app context and a fresh DB.
 """
+
 import pytest
 
 pytestmark = pytest.mark.repository
