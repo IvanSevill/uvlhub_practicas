@@ -70,3 +70,6 @@ jobs:
       - name: Verify newest versions of installed dependencies
         run: python -m pip list --outdated
 
+        # 3.- Realizar un análisis de seguridad de las dependencias instaladas con la librería pip-audit
+      - name: Audit installed dependencies
+        run: pip-audit -r requirements.txt
