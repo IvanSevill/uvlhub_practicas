@@ -1,8 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 import time
+from tests.selenium_support import close_driver, get_host_for_selenium_testing, initialize_driver
 
-from app.environment.host import get_host_for_selenium_testing
-from app.selenium.common import initialize_driver, close_driver
 
 import pytest
 
